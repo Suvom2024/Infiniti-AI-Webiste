@@ -1,43 +1,1644 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <title>Infinit AI Solutions</title>
+  <meta content="" name="Infinit AI Solutions">
+  <meta name="description" content="Infinit AI Solutions">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta content="" name="ZRTHEMES">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <!-- Favicons -->
+  <link href="assets/images/favicon.png" rel="icon">
+  <link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&amp;family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&amp;display=swap" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/stylesheets/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="assets/stylesheets/styles.css" rel="stylesheet">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
-</html>
+  <style>
+    /* Add your custom styles here */
+    .project_v1 {
+        padding: 50px 0;
+    }
+
+    .about-us-section {
+  padding: 50px 0; /* Spacing above and below the section */
+  color: #333; /* Dark grey text for readability */
+}
+
+/* About Content Styling */
+.about-content p {
+  font-size: 16px; /* Base font size for paragraphs */
+  line-height: 1.6; /* Line height for readability */
+  margin-bottom: 20px; /* Spacing between paragraphs */
+}
+
+/* Additional Styling for Emphasis */
+.about-content p:first-child {
+  font-weight: bold; /* Make the first paragraph bold for emphasis */
+}
+
+/* Styling for the 'Join us' Call to Action */
+.about-content p:last-child {
+  color: #000000; /* White text for contrast */
+  padding: 15px; /* Padding inside the call to action */
+  text-align: center; /* Center the text */
+}
+
+
+/* Responsive Design for smaller devices */
+@media (max-width: 768px) {
+  .about-content p {
+    font-size: 14px; /* Slightly smaller font size on mobile */
+  }
+}
+    .section_title {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .section_title h2 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .project_button {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .project_btn {
+        padding: 10px 20px;
+        margin: 5px;
+        border: none;
+        background-color: #f0f0f0;
+        cursor: pointer;
+    }
+
+    .project_v1 .project_button .project_btn {
+    background: #0000;
+    border: none;
+    color: #011a3e;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+    .project_v1 .project_button .project_btn.active_btn {
+    background-image: linear-gradient(180deg, #2626ff, #2626ff);
+    background-image: -ms-linear-gradient(180deg, #2626ff 0, #2626ff 100%);
+    border-radius: 30px;
+    box-shadow: 4px 6.928px 15px 0 #2626ff;
+    color: #fff;
+    padding: 8px 25px;
+  }
+
+
+    .single_project {
+        margin-bottom: 30px;
+    }
+
+    .deneb_img {
+        overflow: hidden;
+    }
+
+    .deneb_img img {
+        transition: transform 0.3s ease;
+        width: 100%;
+    }
+
+    .single_project:hover .deneb_img img {
+        transform: scale(1.1);
+    }
+
+    .deneb_info {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .deneb_info h4 {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .deneb_info p {
+        margin-bottom: 0;
+    }
+
+    /* Slick slider custom arrows */
+    .slick-prev, .slick-next {
+        font-size: 0;
+        line-height: 0;
+        position: absolute;
+        top: 50%;
+        display: block;
+        width: 20px;
+        height: 20px;
+        padding: 0;
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        cursor: pointer;
+        color: transparent;
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+
+    .slick-prev {
+        left: -25px;
+    }
+
+    .slick-next {
+        right: -25px;
+    }
+
+    .slick-prev:before, .slick-next:before {
+        font-family: 'slick';
+        font-size: 20px;
+        line-height: 1;
+        opacity: .75;
+        color: black;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .slick-prev:before {
+        content: '←';
+    }
+
+    .slick-next:before {
+        content: '→';
+    }
+
+</style>
+</head>
+
+<body>
+
+  <header id="header" class="header d-flex align-items-center sticked stikcy-menu">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/images/logo.png" alt="logo">
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#header" class="">Home</a></li>
+          <li><a href="#services" class="">Services</a></li>
+          <li><a href="#deneb_project" class="">Projects</a></li>
+          <li><a href="#testimonials" class="">Testimonials</a></li>
+          <li><a href="#about" class="">About Us</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+      <a href="#contact" class="btn-get-started hide-on-mobile">Get Quotes</a>
+      <button id="darkmode-button"><i class="bi bi-moon-fill"></i></button>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!--  Hero Section  -->
+  <section id="hero" class="hero sticked-header-offset">
+
+    <div id="particles-js"></div>
+    <div id="repulse-circle-div"></div>
+    <div class="container position-relative">
+      <div class="row gy-5 aos-init aos-animate">
+        <div class="col-lg-7 offset-lg-5 dark-bg order-lg-1 d-flex flex-column justify-content-start text-left caption">
+          <h2 data-aos="fade-up">We Are <span>InfinitiAI Solutions</span><span class="circle" data-aos="fade-right" data-aos-delay="800">.</span></h2>
+          <p data-aos="fade-up" data-aos-delay="400">
+            At InfinitiAI Solutions, we pride ourselves on delivering innovative and professional IT solutions.<br><br>
+            Our team of experts is dedicated to providing tailor-made services that meet the unique needs of each client.<br><br>
+            With a focus on excellence and a commitment to staying at the forefront of technology, we ensure that your IT challenges are solved efficiently and effectively.
+        </p>
+        <div class="social" data-aos="fade-up" data-aos-delay="600">
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+          </div>
+          <div class="d-flex justify-content-start">
+            <a href="#contact" class="btn-get-started mr-20" data-aos="fade-up" data-aos-delay="800">Get Quotes</a>
+            <a href="#services" class="btn-get-started" data-aos="fade-up" data-aos-delay="1000">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section -->
+
+  <main id="main">
+        <!-- Start Service Section -->
+        
+        <div id="services" class="section" style="background-image: url('https://developios.com/_next/image?url=%2Fimages%2Fbackground%2Fbg2.png&w=1920&q=75'), url('https://developios.com/images/background/bg17.png'); background-size: contain, contain; background-position: top, bottom; background-repeat: no-repeat, no-repeat;">
+          <div class="section-header" data-aos="fade-up" data-aos-delay="100" style="text-align: center; padding: 0 10% 40px 10%;">
+            <h2>Our Service</h2>
+            <p>We specialize in delivering top-notch IT solutions to clients across the globe. Our team of skilled professionals is dedicated to providing a wide range of services tailored to meet the unique needs of your business. Our commitment to quality and innovation ensures that we deliver results that exceed expectations.</p>
+        </div>
+          <div class="top-icon-box position-relative" >
+            <div class="container position-relative">
+              <div class="row gy-4">
+      
+                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="icon-box">
+                    <div class="icon"><img src="assets/images/icons/service-design.svg" alt="icon"></div>
+                    <h4 class="title"><a href="" class="stretched-link">Web & Application Developemnt</a></h4>
+                    <p>Specialized in creating bespoke websites that cater to a diverse range of industries, including restaurants, laundry delivery, real estate, and more. We are equipped with latest technologies to build visually appealing and user-friendly websites that drive engagement and business growth. Whether you need a simple landing page or a complex e-commerce platform, we deliver better than your expectations.</p>
+                  </div>
+                </div>
+                <!--End Icon Box -->
+      
+                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="icon-box">
+                    <div class="icon"><img src="assets/images/icons/service-hosting.svg" alt="icon"></div>
+                    <h4 class="title"><a href="" class="stretched-link">Business Intelligence & Analytics</a></h4>
+                    <p>With the exponential growth in data, businesses need to make sense of it to drive strategic decisions. Our Business Intelligence services encompass data warehousing, reporting, and advanced analytics to transform raw data into meaningful insights. We provide custom dashboards and reports that allow executives to visualize key performance indicators and trends, facilitating data-driven decision-making.</p>
+                  </div>
+                </div>
+                <!--End Icon Box -->
+      
+                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="500">
+                  <div class="icon-box">
+                    <div class="icon"><img src="assets/images/icons/service-social.svg" alt="icon"></div>
+                    <h4 class="title"><a href="" class="stretched-link">AI Solutions</a></h4>
+                    <p>Leveraging the power of Large Language Models (LLM) and OpenAI to create innovative AI products. Our offerings include chatbots, Q/A platforms, database and data analysis agents, and much more, all designed to enhance your business operations and customer interactions. Trust us to deliver AI solutions that drive efficiency and provide actionable insights , this will help you scale your business.</p>
+                  </div>
+                </div>
+                <!--End Icon Box -->
+      
+                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="icon-box">
+                    <div class="icon"><img src="assets/images/icons/service-seo.svg" alt="icon"></div>
+                    <h4 class="title"><a href="" class="stretched-link">ML & Data Insights</a></h4>
+                    <p>At the heart of innovation, our Machine Learning and Data Science expertise empowers businesses to unlock predictive insights and make data-driven decisions. Our team excels in building sophisticated algorithms and data models tailored to industry-specific needs, from predictive maintenance in manufacturing to customer segmentation in retail and much more.</p>
+                  </div>
+                </div>
+                <!--End Icon Box -->
+      
+      
+                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="icon-box">
+                    <div class="icon"><img src="assets/images/icons/service-cloud.svg" alt="icon"></div>
+                    <h4 class="title"><a href="" class="stretched-link">Cloud Solutions</a></h4>
+                    <p>We offer comprehensive cloud solutions that cater to the evolving needs of modern businesses on different clouds like AWS , Google Cloud and Azure. Our data engineers excel in constructing robust data lakes across various cloud platforms, facilitating scalable and secure data storage solutions. We specialize in orchestrating end-to-end ETL processes to streamline your data flow.</p>
+                  </div>
+                </div>
+                <!--End Icon Box -->
+      
+      
+                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="500">
+                  <div class="icon-box">
+                    <div class="icon"><img src="assets/images/icons/service-secure.svg" alt="icon"></div>
+                    <h4 class="title"><a href="" class="stretched-link">Database Optimization , Data Warehousing & ETL Services</a></h4>
+                    <p>From ensuring your databases are finely-tuned and optimized for high performance to architecting robust data warehousing systems, we cover all bases. Our expertise includes, but is not limited to, database optimization, complex ETL processes, data consolidation, and warehousing, facilitating a seamless flow of data across your enterprise</p>
+                  </div>
+                </div>
+                <!--End Icon Box -->
+      
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Service Section -->
+
+        <!-- Featured -->
+        <section style="background-image: url('https://developios.com/images/background/bg4.png'); background-size: contain; background-position: center center; background-repeat: no-repeat;">
+          <div class="container" id="featured" >
+              <div class="section-header" data-aos="fade-up" data-aos-delay="100" >
+                <h2>Why Choose Us</h2>
+                <p>Our team is well-versed in a range of technologies, from AI and data engineering to web development and digital marketing. We have the skills to tackle any challenge.
+                  We understand that every business is unique. That's why we tailor our services to meet your specific needs and goals.</p>
+              </div>
+          <div class="row" >
+            <!-- start  left -->
+            <div class="col-md-4 left">
+              <div class="list-wrap" data-aos="fade-up" data-aos-delay="100">
+                <div class="description">
+                  <h4>Experience</h4>
+                  <p>Harness our extensive expertise to transform your business technology landscape.</p>
+                </div>
+                  <div class="icon">
+                    <img src="assets/images/icons/icon-1.svg" alt="icon">
+                  </div>
+              </div>
+              
+              <div class="list-wrap" data-aos="fade-up" data-aos-delay="400">
+                <div class="description">
+                  <h4>Products</h4>
+                  <p>Innovative and customized tech products designed to meet your unique business needs.</p>
+                </div>
+                  <div class="icon">
+                    <img src="assets/images/icons/icon-2.svg" alt="icon">
+                  </div>
+            </div>
+              
+              
+              <div class="list-wrap" data-aos="fade-up" data-aos-delay="500">
+                <div class="description">
+                  <h4>Approach</h4>
+                  <p>Strategic and client-centric methods to deliver impactful IT solutions.</p>
+                </div>
+                <div class="icon">
+                  <img src="assets/images/icons/icon-3.svg" alt="icon">
+                </div>
+              </div>
+            </div>
+            <!-- end  left -->
+            
+            <!-- start  center -->
+            <div class="col-md-4 p-4 p-sm-5 center">
+              <div class="list-center-wrap" data-aos="fade-up" data-aos-delay="100">
+                <div class="center-icon">
+                  <img src="assets/images/features.jpg" alt="icon">
+                </div>
+              </div>
+            </div>
+            <!-- end  center -->
+            <!-- start  right -->
+            <div class="col-md-4 right">
+              <div class="list-wrap" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon">
+                  <img src="assets/images/icons/icon-4.svg" alt="icon">
+                </div>
+                <div class="description">
+                  <h4>Pricing</h4>
+                  <p>Transparent and competitive pricing tailored to provide value for your investment.</p>
+                </div>
+            </div>
+              
+              <div class="list-wrap" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon">
+                  <img src="assets/images/icons/icon-5.svg" alt="icon">
+                </div>
+                <div class="description">
+                  <h4>Delivery</h4>
+                  <p>Timely and efficient delivery that aligns with your project timelines and quality expectations.</p>
+                </div>
+              </div>
+              
+              
+              <div class="list-wrap" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon">
+                  <img src="assets/images/icons/icon-6.svg" alt="icon">
+                </div>
+                <div class="description">
+                  <h4>Support</h4>
+                  <p>Dedicated support to ensure seamless operation and quick resolution of your IT challenges.</p>
+                </div>
+              </div>
+            </div>
+            <!-- end  right -->
+          </div>
+          
+        </div>
+    </section>
+    <!-- Featured -->
+
+
+    <!-- Portfolio Section -->
+    <section id="deneb_project" class="deneb_project project_v1">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="section-header" style="text-align: center">
+        <h2>Our Latest Projects</h2>
+        <p>Showcasing innovation and expertise through our recently completed projects – each a testament to our commitment to excellence and client success</p>
+    </div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+                <div class="project_button text-center">
+                    <button class="project_btn active_btn" data-filter=".AI">AI Products</button>
+                    <button class="project_btn" data-filter=".WEB">Web Development</button>
+                    <button class="project_btn" data-filter=".DATA">Cloud Solutions</button>
+                    <button class="project_btn" data-filter=".APP">Mobile App</button>
+                </div>
+            </div>
+        </div>
+          <div class="row project_slider">
+              <!-- Project items will be inserted here by JavaScript -->
+          </div>
+      </div>
+  </section>
+    <!-- End Portfolio Section -->
+
+    <section id="about" class="about-us-section"style="background-image: url('https://developios.com/_next/image?url=%2Fimages%2Fbackground%2Fbg15.png&w=1920&q=75'); background-size: contain; background-position: center center; background-repeat: no-repeat;">
+      <div class="container">
+          <div class="section-header">
+              <h2>About InfinitiAI</h2>
+              <p>Innovation through Adversity</p>
+          </div>
+          <div class="about-content">
+              <p>Born amidst the unprecedented challenges of a global pandemic, InfinitiAI stands as a testament to resilience and innovation. In a time when the world shifted towards the digital realm, our company was conceived to help bridge the gap between technology and everyday business needs.</p>
+              
+              <p>The early years were a crucible, shaping and forging our team in the fires of rapid change and uncertainty. We struggled, like many, to navigate the tumultuous economic waters but found strength in our unity and purpose. Our commitment to providing outstanding IT solutions became the beacon that guided us through the storm.</p>
+              
+              <p>Today, InfinitiAI has emerged as a paragon of adaptability and forward-thinking. Our journey, marked by relentless dedication and a series of successful projects, narrates not just our growth but the evolution of our clients who have thrived with our digital solutions.</p>
+              
+              <p>As we continue to expand our horizons, we remain dedicated to the ideals that were our founding pillars - unwavering quality, innovative solutions, and genuine customer care. Join us as we stride into the future, creating a world where technology empowers and transforms businesses for the better.</p>
+          </div>
+      </div>
+  </section>
+
+    <!--  Testimonials Section  -->
+    <section id="testimonials" class="testimonials"style="background-image: url('https://developios.com/images/background/bg17.png'); background-size: contain; background-position: center center; background-repeat: no-repeat;">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>What People Say</h2>
+          <p>Hear from our satisfied clients who share their experiences and the impactful results delivered by our dedicated team</p>
+        </div>
+
+        <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <div class="d-flex align-items-center info-box">
+                    <img src="https://portfolio-website-of-infinit-ai.vercel.app/magnus.jpeg" class="testimonial-img flex-shrink-0"
+                      alt="">
+                    <div>
+                      <h3>Magnus Mammy</h3>
+                      <h4>Owner of Sembe</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                          class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    Choosing InfinitiAI was the best decision we ever made for our digital transformation. Their team not only understood our vision but also brought it to life with their expertise and innovative approach. The results were nothing short of remarkable.
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <div class="d-flex align-items-center info-box">
+                    <img src="https://i1.rgstatic.net/ii/profile.image/365930749153296-1464256097477_Q128/Ranjit-Choudhury.jpg" class="testimonial-img flex-shrink-0"
+                      alt="">
+                    <div>
+                      <h3>Ranjit Choudhury</h3>
+                      <h4>Owner of HomeBuyers Agency</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                          class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    InfinitiAI consistently goes above and beyond. Their attention to detail and dedication to delivering top-tier work has had a tangible impact on our bottom line. They are not just a service provider they are an essential part of our team.
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <div class="d-flex align-items-center info-box">
+                    <img src="https://www.astro.princeton.edu/~rt3504/images/people/Screen%20Shot%202022-01-08%20at%204.00.53%20PM.png" class="testimonial-img flex-shrink-0"
+                      alt="">
+                    <div>
+                      <h3>Damien Roskar</h3>
+                      <h4>Owner of ApexLiving</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                          class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    The level of expertise and professionalism shown by InfinitiAI has been a game-changer for our business. From seamless data integration to creating user-friendly interfaces, their work has elevated our customer experience to new heights .
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <div class="d-flex align-items-center info-box">
+                    <img src="assets/images/testimonials/testimonial-4.jpg" class="testimonial-img flex-shrink-0"
+                      alt="">
+                    <div>
+                      <h3>Fizzi Brandon</h3>
+                      <h4>Realtor</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                          class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    I cannot express enough how InfinitiAI has transformed the way I do business. Their expertise in integrating IDX into my real estate website has not only streamlined property listings but also made them more accessible and engaging for my clients.
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- End Testimonials Section -->
+
+    <!--  Start Counter Section  -->
+    <div id="stats-counter" class="call-to-action stats-counter section">
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-4">
+            <div class="stats-item d-flex flex-column align-items-center">
+              <div class="icon circle"><img src="assets/images/icons/happy-clients.svg" alt="icon"></div>
+              <span data-purecounter-start="0" data-purecounter-end="94" data-purecounter-duration="1" class="purecounter"></span>
+              <p><span>Happy Clients</span> Your success is our priority</p>
+            </div><!-- End Stats Item -->
+            </div>
+            <div class="col-lg-4">
+            <div class="stats-item d-flex flex-column align-items-center">
+              <div class="icon circle"><img src="assets/images/icons/complete-projects.svg" alt="icon"></div>
+              <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1" class="purecounter"></span>
+              <p><span>Completed Projects</span> From concept to reality</p>
+            </div><!-- End Stats Item -->
+            </div>
+            <div class="col-lg-4">
+            <div class="stats-item d-flex flex-column align-items-center">
+              <div class="icon circle"><img src="assets/images/icons/hours-support.svg" alt="icon"></div>
+              <span data-purecounter-start="0" data-purecounter-end="453" data-purecounter-duration="1" class="purecounter"></span>
+              <p><span>Hours Of Support</span> Committed to your ongoing needs</p>
+            </div><!-- End Stats Item -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  End Counter Section  -->
+
+    <!--  Call To Action Section  -->
+    <!-- End Call To Action Section -->
+
+
+    <!--  Recent Blog Posts Section  -->
+    <section id="recent-posts" class="recent-posts sections-bg" style="background-image: url('https://developios.com/images/background/bg2.png'); background-size: contain; background-position: center center; background-repeat: no-repeat;">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Blogs</h2>
+          <p>Dive into our latest insights, where we explore the trends, techniques, and technologies shaping the future of the IT landscape</p>
+        </div>
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <article>
+              <div class="post-img">
+                <img src="https://as2.ftcdn.net/v2/jpg/02/83/46/33/1000_F_283463385_mfnrx6RPU3BqObhVuVjYZjeZ5pegE7xq.jpg" alt="" class="img-fluid">
+              </div>
+              <p class="post-category">The Next Wave of Web Development is Here Already</p>
+              <h2 class="title">
+                <a href="#">Unveiling the latest trends in web development, from responsive design to progressive web applications, tailored for sectors like real estate and e-commerce.
+                </a>
+              </h2>
+              <div class="d-flex align-items-center">
+                <div class="post-meta">
+                  <p class="post-author">SK</p>
+                  <p class="post-date">
+                    <time datetime="2022-01-01">April 1, 2024</time>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-lg-4">
+            <article>
+              <div class="post-img">
+                <img src="https://powerslides.com/wp-content/uploads/2019/02/Data-Lake-Architecture-3.jpg" alt="" class="img-fluid">
+              </div>
+              <p class="post-category">Building Data Lakes for Tomorrow's Needs</p>
+              <h2 class="title">
+                <a href="#">Learn about the strategic advantages of constructing scalable data lakes on the cloud and how end-to-end ETL processes are transforming business analytics.</a>
+              </h2>
+              <div class="d-flex align-items-center">
+                <div class="post-meta">
+                  <p class="post-author">SK</p>
+                  <p class="post-date">
+                    <time datetime="2022-01-01">April 1, 2024</time>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-lg-4">
+            <article>
+              <div class="post-img">
+                <img src="https://media.istockphoto.com/id/1765238469/photo/ai-ethics-or-ai-law-concept-bias-in-machine-learning-algorithms-developing-ai-codes-of-ethics.jpg?s=2048x2048&w=is&k=20&c=VtrMYiIIpP5MCpO26TIKG-g6BMh5dPzr9A6K10N_-DE=" alt="" class="img-fluid">
+              </div>
+              <p class="post-category">AI and the Future of Customer Service</p>
+              <h2 class="title">
+                <a href="#">Discover how AI-driven chatbots and Q/A platforms are revolutionizing customer interactions, offering personalized support and real-time engagement</a>
+              </h2>
+              <div class="d-flex align-items-center">
+                <div class="post-meta">
+                  <p class="post-author">SK</p>
+                  <p class="post-date">
+                    <time datetime="2022-01-01">April 1, 2024</time>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div><!-- End post list item -->
+
+        </div><!-- End recent posts list -->
+
+      </div>
+    </section><!-- End Recent Blog Posts Section -->
+
+    <!-- Start Contact Section -->
+    <div id="contact" class="contact-section section"style="background-image: url('https://developios.com/images/background/bg2.png'); background-size: contain; background-position: center center; background-repeat: no-repeat;">
+      <div class="section-header">
+        <h2>Get In Touch With Us</h2>
+        <p>When unknow printer took a gallery of type and scramblted it to make a type specimen book</p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12" data-aos="fade-right">
+            <div class="contact-information-box-3">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="single-contact-info-box">
+                    <div class="contact-info">
+                      <h6>Address:</h6>
+                      <p>InfinitiAI , Block - K , Near Kavi Subash Metro</p>
+                      <p>Baishnabghata Patuli</p>
+                      <p>Kolkata - 700094</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="single-contact-info-box">
+                    <div class="contact-info">
+                      <h6>Phone:</h6>
+                      <p>+91 8240968885 </p>
+                      <p>+91 9241659485 </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="single-contact-info-box">
+                    <div class="contact-info">
+                      <h6>Email:</h6>
+                      <p>liamelzer@gmail.com</p>
+                      <p>ashutosh@gmail.com</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-12" data-aos="fade-left">
+            <div class="contact-form-box contact-form contact-form-3">
+              <div class="form-container-box">
+                <form class="contact-form form" id="ajax-contact" method="post" action="assets/phpscripts/contact.php">
+                  <div class="controls">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group form-input-box">
+                          <input type="text" class="form-control" id="name" name="name" placeholder="Name*"
+                            required="required" data-error="Name is required.">
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group form-input-box">
+                          <input type="email" class="form-control" id="email" name="email" placeholder="Email*"
+                            required="required" data-error="Valid email is required.">
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group form-input-box">
+                          <input type="text" class="form-control" name="subject" placeholder="Subject"
+                            required="required">
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group form-input-box">
+                          <textarea class="form-control" id="message" name="message" rows="7"
+                            placeholder="Write Your Message*" required="required"
+                            data-error="Please, leave us a message."></textarea>
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <button type="submit" data-text="Send Message">Send Message</button>
+                      </div>
+                      <div class="messages">
+                        <div class="alert alert alert-success alert-dismissable alert-dismissable hidden"
+                          id="msgSubmit"><button type="button" class="close" data-dismiss="alert"
+                            aria-hidden="true">&times;</button> Thank You! your message has been sent. </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Contact Section -->
+
+
+  </main><!-- End #main -->
+
+  <!--  Footer  -->
+  <footer id="footer" class="footer-section">
+    <div class="container">
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="index.html" class="logo d-flex align-items-center">
+                              <img src="assets/images/logo.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="footer-text">
+                            <p>At InfinitiAI Solutions, we pride ourselves on delivering innovative and professional IT solutions. Our team of experts is dedicated to providing tailor-made services that meet the unique needs of each client</p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
+                      <div class="service-widget footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Services</h3>
+                        </div>
+                          <ul class="list">
+                              <li><a href="#services">Web Design</a></li>
+                              <li><a href="#services">App Developemnt</a></li>
+                              <li><a href="#services">Cloud Solutions</a></li>
+                              <li><a href="#services">Business Insights</a></li>
+                              <li><a href="#services">AI Implementation</a></li>
+                              <li><a href="#services">Data Warehousing</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
+                      <div class="service-widget footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Information</h3>
+                        </div>
+                          <ul class="list">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Blog Details</a></li>
+                            <li><a href="#">Coming Soon</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="contact-widget footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Contacts</h3>
+                        </div>
+                          <div class="footer-text">
+                              <p><i class="bi bi-geo-alt-fill mr-15"></i> 101 West Town , PBO 12345, United States</p>
+                              <p><i class="bi bi-telephone-inbound-fill mr-15"></i> +1 1234 56 789</p>
+                              <p><i class="bi bi-envelope-fill mr-15"></i> contact@example.com</p>
+                          </div>
+                    </div>
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Newsletter</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Don't miss to subscribe to our new feeds, kindly fill the form below.</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Email Address">
+                                <button><i class="bi bi-telegram"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center active">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <div id="preloader"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/javascripts/plugins.js"></script>
+  <script src="assets/javascripts/purecounter_vanilla.js"></script>
+  <script src="assets/javascripts/validator.min.js"></script>
+  <script src="assets/javascripts/contactform.js"></script>
+  <script src="assets/javascripts/particles.min.js"></script>
+  <script src="assets/javascripts/script.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/javascripts/main.js"></script>
+
+  <script>
+    const projects = [
+    {
+      image: 'assets/images/AWS_6.png',
+      title: 'API Security and Traffic Management on AWS',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: 'assets/images/AWS_7.png',
+      title: 'AWS-Integrated Rover Surveillance with Real-Time Video Analysis and IoT Control',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: 'assets/images/AWS_8.png',
+      title: 'AWS Data Processing and Workflow Automation Architecture',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: 'assets/images/AWS_9.png',
+      title: 'Scalable Cloud-Based File Processing and Analytics Workflow',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: 'assets/images/AWS_10.png',
+      title: 'Multilingual Text Analysis and Classification Pipeline Using AWS SageMaker',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: 'assets/images/AWS_11.jpg',
+      title: 'Automated Order Processing and Validation Workflow with AWS AI Services',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: 'assets/images/AWS_12.png',
+      title: 'Real-Time Sports Analytics and Broadcasting Integration Platform On AWS',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: 'assets/images/AWS_13.png',
+      title: 'Autonomous Vehicle Data Processing and Analytics Pipeline on AWS',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: 'assets/images/AWS_14.png',
+      title: 'Enterprise Data Analytics and Business Intelligence on AWS',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: 'assets/images/AWS_15.png',
+      title: 'Real-Time User Engagement and Marketing Automation On AWS',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: 'assets/images/AWS_16.png',
+      title: 'Cloud-Based Text Processing and Analysis Pipeline with Real-Time Dashboarding On AWS',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: 'assets/images/AWS_17.png',
+      title: 'Integrated IoT Analytics Pipeline for Real-time Monitoring and Anomaly Detection On AWS',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: 'assets/images/AWS_18.png',
+      title: 'Cloud-Enabled Medical Imaging and Machine Learning Pipeline on AWS',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: 'assets/images/AWS_19.png',
+      title: 'Advanced Customer Service Interaction and Data Management Platform on AWS',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: 'assets/images/AWS_20.png',
+      title: 'Cloud-Native Image Processing and Inference Service on AWS',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: 'assets/images/AWS_21.png',
+      title: 'Multi-Account AWS Deployment Pipeline',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: 'assets/images/AWS_22.png',
+      title: 'Scalable AWS Data Lake for Enterprise Analytics and Business Intelligence on AWS',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: 'assets/images/AWS_23.webp',
+      title: 'Sentiment Analysis Pipeline for Customer Reviews Using AWS and Apache Airflow',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: 'assets/images/Azure_5.png',
+      title: 'Hybrid Cloud Data Analytics and Machine Learning Operations on Azure',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: 'assets/images/Azure_6.webp',
+      title: 'Scalable Image Analysis Service Using TensorFlow on Azure with KubeFlow Orchestration',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: 'assets/images/Azure_7.png',
+      title: 'Real-Time Anomaly Detection in Time Series Data with Azure Analytics and Machine Learning',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: 'assets/images/Azure_8.png',
+      title: 'Video Data Processing and Visualization Pipeline on Azure',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      image: 'assets/images/Azure_9.png',
+      title: 'AWS Data Lake and Analytics Pipeline for Real-Time Insights and Machine Learning',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+    },
+    {
+      title: 'Data Analytics on Azure',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+      image: 'assets/images/Azure_1.jpeg',
+      content: [
+        {
+          type: 'text',
+          title: 'Scalable & Secure Data Analytics Platform on Microsoft Azure Cloud',
+          description: `
+            <p>In this project, we designed and implemented a robust and scalable data analytics platform leveraging the powerful services provided by Microsoft Azure Cloud. The primary objective was to enable seamless ingestion, storage, processing, and visualization of data from various sources, while ensuring data security and governance.</p>
+            
+            <p>The architecture encompassed the following key components:</p>
+            
+            <ul>
+              <li><strong>Data Sources:</strong> We integrated multiple data sources, including on-premises Microsoft SQL Servers, other relational databases, Azure SQL Databases, Azure Table Storage, and Azure Cosmos DB. This allowed for the consolidation of data from diverse sources into a centralized repository.</li>
+              
+              <li><strong>Data Ingestion and Storage:</strong> Azure Data Factory was utilized as the orchestration layer, facilitating the automated extraction, transformation, and loading (ETL) of data from various sources into Azure Data Lake Storage. This scalable and secure data lake served as the central repository for all ingested data.</li>
+              
+              <li><strong>Data Processing and Analytics:</strong> Azure Synapse Analytics, a powerful analytics service, was employed for efficient data processing and advanced analytics. It enabled complex querying, data transformations, and machine learning model development and deployment, all within a secure and governed environment.</li>
+              
+              <li><strong>Authentication and Authorization:</strong> To ensure robust security and access control, Azure Active Directory was integrated into the platform, enabling centralized identity and access management for all services and resources.</li>
+              
+              <li><strong>Analysis and Visualization:</strong> Azure Analysis Services provided robust analytical capabilities, allowing for multidimensional data modeling and advanced data analysis. The insights derived from the data were then visualized through Power BI, a powerful business intelligence and data visualization tool.</li>
+            </ul>
+            
+            <p>Throughout the project, we focused on implementing best practices for data governance, security, and compliance. Robust data encryption mechanisms were employed to protect sensitive information at rest and in transit. Access controls and audit trails were implemented to ensure data privacy and regulatory compliance.</p>
+            
+            <p>The end result was a scalable, secure, and high-performance data analytics platform that empowered our clients to derive actionable insights from their data, enabling informed decision-making and driving business growth.</p>
+          `,
+        },
+      ],
+    },
+    {
+      title: 'Microservices Architecture on Azure (AKS)',
+      category: 'Cloud Solutions',
+      categories: ['DATA'],
+      image: 'assets/images/Azure_2.jpeg',
+      content: [
+        {
+          type: 'text',
+          title: 'Implementing a Containerized Microservices Architecture on Azure Kubernetes Service (AKS)',
+          description: `
+            <p>In this project, we designed and deployed a robust and scalable microservices-based application leveraging the Azure Kubernetes Service (AKS) and other Azure services. The primary objective was to build a highly available and easily maintainable application with a strong focus on DevOps practices and automated deployments.</p>
+            
+            <p>The architecture employed the following key components:</p>
+            
+            <ul>
+              <li><strong>Azure Kubernetes Service (AKS):</strong> We utilized AKS as the core infrastructure for hosting and managing our containerized microservices. AKS provided a managed Kubernetes environment, ensuring high availability, scalability, and efficient resource utilization.</li>
+              
+              <li><strong>Containerized Microservices:</strong> The application was divided into multiple microservices, each encapsulated within Docker containers. This modular approach enabled independent development, deployment, and scaling of individual services, promoting agility and maintainability.</li>
+              
+              <li><strong>Front-end and Backend Services:</strong> The architecture included a front-end service, acting as the entry point for client applications, and multiple backend services responsible for handling various business logic and data processing tasks.</li>
+              
+              <li><strong>Ingress and Load Balancing:</strong> Azure Load Balancer and the Nginx Ingress Controller were utilized to distribute incoming traffic across the front-end and backend services, ensuring high availability and efficient load balancing.</li>
+              
+              <li><strong>Utility Services:</strong> We integrated several utility services within the Kubernetes cluster, including Elasticsearch for distributed search and analytics, Prometheus for monitoring and alerting, and Pod autoscaling for dynamic resource allocation based on demand.</li>
+              
+              <li><strong>External Data Stores:</strong> The application leveraged external data stores, such as SQL databases and Azure Cosmos DB, for persistent data storage and retrieval.</li>
+              
+              <li><strong>DevOps and Continuous Integration/Continuous Deployment (CI/CD):</strong> We implemented Azure Pipelines for automated build, testing, and deployment processes, enabling streamlined and consistent delivery of application updates. Docker images were pushed to the Azure Container Registry, facilitating efficient distribution and version management.</li>
+                            
+            </ul>
+            
+            <p>Throughout the project, we followed best practices for containerization, microservices architecture, and DevOps principles. This approach enabled efficient deployment, scaling, and management of the application, while ensuring high availability, resilience, and adherence to security and governance standards.</p>
+          `,
+        },
+      ]
+      },
+      {
+        title: 'Data Insights on Azure',
+        category: 'Cloud Solutions',
+        categories: ['DATA'],
+        image: 'assets/images/Azure_3.png',
+        content: [
+          {
+            type: 'text',
+            title: 'Implementing a Scalable and Integrated Data Analytics Platform on Azure',
+            description: `
+              <p>In this project, we designed and implemented a comprehensive data analytics platform leveraging various Azure services to enable seamless data ingestion, processing, and serving of insights. The primary objective was to build a scalable and integrated solution that could handle large volumes of data from multiple sources and provide advanced analytics capabilities.</p>
+              
+              <p>The architecture encompassed the following key components:</p>
+              
+              <ul>
+                <li><strong>Data Ingestion:</strong> Azure Event Hubs and Azure Data Factory were utilized for efficient data ingestion and orchestration of ETL processes.</li>
+                <li><strong>Data Storage and Processing:</strong> A multi-tier data lake architecture was implemented using Azure Data Lake Storage and Azure Databricks provided advanced analytics capabilities.</li>
+                <li><strong>Streaming and Machine Learning:</strong> Apache Spark and ml/flow were incorporated for real-time processing and machine learning lifecycle management.</li>
+                <li><strong>Serving and Visualization:</strong> Azure Machine Learning, AKS, and Power BI were leveraged for deploying models, scaling services, and data visualization.</li>
+                <li><strong>Azure Synapse Analytics:</strong> Utilized for advanced data warehousing and analytics.</li>
+              </ul>
+              
+              <p>Robust data encryption, access controls, and audit trails were implemented throughout the project to ensure data governance, security, and compliance.</p>
+              
+              <p>The end result was a scalable, highly available, and integrated data analytics platform that empowered our clients to derive actionable insights, enabling informed decision-making and driving business growth.</p>
+            `,
+          },
+          // ...additional content objects if needed
+        ],
+      },
+      {
+        title: 'Machine Learning Pipeline on Microsoft Azure',
+        category: 'Cloud Solutions',
+        categories: ['DATA'],
+        image: 'assets/images/Azure_4.jpeg',
+        content: [
+          {
+            type: 'text',
+            title: 'Implementing an End-to-End Data Analytics and Machine Learning Pipeline on Microsoft Azure',
+            description: `
+              <p>In this project, we designed and implemented a comprehensive data analytics and machine learning pipeline leveraging various Azure services. The primary objective was to build a scalable and integrated solution that could ingest data from multiple sources, process and transform it, and serve insights and predictions through advanced analytics and machine learning models.</p>
+    
+              <p>The architecture encompassed the following key components:</p>
+              
+              <ul>
+                <li><strong>Data Ingestion:</strong>
+                  <ul>
+                    <li>Azure Data Factory was employed to orchestrate and automate the extraction, transformation, and loading (ETL) processes, facilitating the movement of data into the data lake.</li>
+                    <li>Azure Data Lake Storage implemented a multi-tier architecture for efficient data organization and processing.</li>
+                  </ul>
+                </li>
+                <li><strong>Data Processing and Transformation:</strong>
+                  <ul>
+                    <li>Azure Databricks provided powerful analytics and processing capabilities, as well as machine learning model deployment.</li>
+                    <li>Azure Stream Analytics was employed for real-time data stream processing and insights derivation.</li>
+                  </ul>
+                </li>
+                <li><strong>Machine Learning and Serving:</strong>
+                  <ul>
+                    <li>Azure Machine Learning enabled building, training, and deploying scalable machine learning models.</li>
+                    <li>Azure Kubernetes Service (AKS) ensured high availability for containerized models and microservices.</li>
+                  </ul>
+                </li>
+                <li><strong>Data Visualization and Reporting:</strong>
+                  <ul>
+                    <li>Power BI integrated for interactive dashboards and reporting.</li>
+                    <li>Azure Analysis Services provided advanced data modeling and analytics.</li>
+                  </ul>
+                </li>
+              </ul>
+    
+              <p>Throughout the project, best practices for data governance, security, and compliance were followed, with robust encryption and access controls ensuring data privacy and regulatory compliance. The result was a scalable and secure data analytics and machine learning pipeline, empowering clients to make data-driven decisions and drive innovation.</p>
+            `,
+          },
+          // ...other content types if necessary
+        ],
+      },
+      // {
+      //   title: 'Marketing Analytics on Google Cloud',
+      //   category: 'Cloud Solutions',
+      //   categories: ['DATA'],
+      //   image: 'assets/images/GCP_1.jpeg',
+      //   content: [
+      //     {
+      //       type: 'text',
+      //       title: 'Scalable & Efficient Digital Marketing Analytics Platform on GCP',
+      //       description: `
+      //         <p>In this project, we designed and implemented a comprehensive digital marketing analytics platform leveraging various services provided by Google Cloud Platform (GCP). The primary objective was to build a scalable and efficient solution that could ingest and process data from multiple sources, perform advanced analytics, and deliver actionable insights to publishers and advertisers.</p>
+              
+      //         <h3>Ingestion Layer:</h3>
+      //         <ul>
+      //           <li><strong>Cloud Dataflow:</strong> Utilized for ingesting and processing data streams in real-time from various sources, such as web applications, mobile apps, and advertising platforms.</li>
+      //           <li><strong>Cloud Pub/Sub:</strong> Employed for reliable and scalable data ingestion, acting as a buffer between data sources and downstream processing components.</li>
+      //           <li><strong>Cloud Dataproc:</strong> Used for batch processing of large datasets from sources like DoubleClick and third-party clusters.</li>
+      //         </ul>
+              
+      //         <h3>Processing and Analysis Layer:</h3>
+      //         <ul>
+      //           <li><strong>Cloud Dataproc:</strong> Leveraged for real-time data processing and analysis using Apache Spark.</li>
+      //           <li><strong>BigQuery:</strong> Utilized for querying and analyzing large datasets efficiently.</li>
+      //           <li><strong>Compute Engine:</strong> Employed for running custom data processing workloads and batch jobs.</li>
+      //         </ul>
+              
+      //         <h3>Storage Layer:</h3>
+      //         <ul>
+      //           <li><strong>Cloud Storage:</strong> Utilized for storing production data, archival data, and intermediate data processed by various components.</li>
+      //           <li><strong>Cloud Bigtable:</strong> Employed for storing and serving large analytical and operational datasets.</li>
+      //         </ul>
+      //         <h3>Presentation Layer:</h3>
+      //         <ul>
+      //           <li><strong>App Engine:</strong> Utilized for hosting web applications, content management systems (CMS), and e-commerce platforms, enabling seamless integration with the analytics platform.</li>
+      //         </ul>
+          
+      //         <p>Throughout the project, we followed best practices for data governance, security, and compliance. Robust data encryption mechanisms were employed to protect sensitive information at rest and in transit. Access controls and audit trails were implemented to ensure data privacy and regulatory compliance.</p>
+              
+      //         <p>The end result was a scalable, efficient, and integrated digital marketing analytics platform that empowered our clients to gain valuable insights into their marketing campaigns, user behavior, and audience engagement, enabling data-driven decision-making and optimizing their digital presence.</p>
+      //       `,
+      //     },
+      //     // Additional content sections if needed
+      //   ],
+      // },
+      // {
+      //   title: 'Data Integration on Google Cloud',
+      //   category: 'Cloud Solutions',
+      //   categories: ['DATA'],
+      //   image: 'assets/images/GCP_2.jpeg',
+      //   content: [
+      //     {
+      //       type: 'text',
+      //       title: 'Centralized Data Platform for Streamlined Analytics',
+      //       description: `
+      //         <p>In this project, we developed a robust data integration and analytics platform to streamline data flow from various sources into a centralized data warehouse for efficient analysis and reporting. The key components and functionalities are as follows:</p>
+              
+      //         <h3>Data Lake:</h3>
+      //         <p>A centralized repository to store raw data from multiple sources, including Client SQL, Customer Data, Supplier Data, Investor Data, and NoSQL databases. This data lake serves as the single source of truth for all data assets within the organization.</p>
+              
+      //         <h3>Extract, Transform, Load (ETL) Pipeline:</h3>
+      //         <p>We implemented an Airflow-based ETL pipeline to extract data from the data lake, perform necessary transformations (such as data cleansing, formatting, and enrichment), and load the processed data into the data warehouse.</p>
+              
+      //         <h3>Data Warehouse:</h3>
+      //         <p>A scalable and optimized data warehouse solution was set up to store the transformed data in a structured format, enabling efficient querying and analysis.</p>
+              
+      //         <h3>Data Analytics and Visualization:</h3>
+      //         <ul>
+      //           <li><strong>Google:</strong> Integrated for data exploration and querying.</li>
+      //           <li><strong>Metabase:</strong> Employed for building interactive visualizations and reports.</li>
+      //           <li><strong>Looker:</strong> Utilized for advanced data modeling and business intelligence capabilities.</li>
+      //         </ul>
+              
+      //         <h3>Mixpanel Integration:</h3>
+      //         <p>Mixpanel, a leading product analytics platform, was integrated to capture and analyze user interactions and behaviors within the organization's applications or websites.</p>
+              
+      //         <p>The primary objectives of this project were to establish a centralized data platform, streamline data ingestion from disparate sources, enable efficient data transformation and loading processes, and provide powerful analytical capabilities for data-driven decision-making. By consolidating data assets and empowering users with self-service analytics tools, we aimed to drive better insights, optimize operations, and foster a data-driven culture within the organization.</p>
+      //       `,
+      //     },
+      //     // Additional content sections if needed
+      //   ],
+      // },
+
+      {
+        title: 'SDLF Implementation on AWS',
+        category: 'Cloud Solutions',
+        categories: ['DATA'],
+        image: 'assets/images/AWS_1.png',
+        content: [
+          {
+            type: 'text',
+            title: 'Enterprise Data Platform with Modern Data Lake Architecture',
+            description: `
+              <p>This project involved the design and implementation of a comprehensive enterprise data platform leveraging a modern data lake architecture. The key components and functionalities are as follows:</p>
+              <p><strong>Data Ingestion:</strong> The platform supports ingestion of data from various sources, including relational databases (Oracle), transactional data (files, SFTP), and real-time data streams (BASE24-eps, BASE24, ERUS Server). Technologies like Historico (for Oracle), Batch (PySpark, Spark), SFTP Transfer, and Kinesis Data Streams were employed to capture and ingest data from these sources.</p>
+              <p><strong>Data Lake:</strong> A centralized data lake was established, consisting of three zones: Raw Zone, Standard Zone, and Analytics Zone. The Raw Zone stores unprocessed data in its native format (Amazon S3), while the Standard Zone holds cleansed and transformed data (also in S3). The Analytics Zone (S3) contains data optimized for analytical workloads.</p>
+              <p><strong>Streaming Zone:</strong> A separate Streaming Zone was implemented using Amazon Kinesis Data Firehose, enabling real-time data ingestion and processing with low latency (1 min - 15 min, 1 MB - 128 MB).</p>
+              <p><strong>Data Processing and Transformation:</strong> The platform leverages various technologies for data processing and transformation, including Glue (Catalog), DynamoDB (Control & Lineage), Elastic Search (Monitoring & Lineage), and Pipeline Operationalization components like Task Management (Argo), Orchestration (Airflow, Lambda), Step Functions, and Glue (Etl).</p>
+              <p><strong>Analytics and Visualization:</strong> The processed data is made available for analytical purposes through tools like Redshift (Warehouse), Athena (Query), QuickSight (BI Service), and Real-Time Dashboards. This enables users to perform advanced analytics, create visualizations, and gain insights from the data.</p>
+              <p><strong>Data Lab and Advanced Analytics:</strong> A dedicated Data Lab environment is available, featuring a Sandbox Zone (S3), Processing (Lambda), and Exploration (Athena, Query) capabilities. This allows data scientists, ML engineers, and data engineers to explore, experiment, and develop advanced analytical models and solutions.</p>
+              <p><strong>DevOps and CI/CD:</strong> The platform incorporates DevOps principles and utilizes tools like CloudFormation, CodePipeline, CodeBuild, CodeCommit, CloudWatch, Jenkins, and GitLab for automation, continuous integration, continuous deployment, and infrastructure as code (IaC) practices.</p>
+              <p>The primary objective of this project was to establish a robust, scalable, and secure data platform that integrates seamlessly with various data sources, enables efficient data processing and transformation, and provides advanced analytical capabilities to drive data-driven decision-making across the enterprise.</p>
+            `
+          }
+        ]
+      },
+      {
+        title: 'Serverless Web App on AWS',
+        category: 'Cloud Solutions',
+        categories: ['DATA'],
+        image: 'assets/images/AWS_2.jpeg',
+        content: [
+          {
+            type: 'text',
+            title: 'Serverless Web Application with GraphQL API, Cost Monitoring, and Container-based Discovery Service',
+            description: `
+              <p>This project involved the development of a serverless web application leveraging various AWS services. The key components and functionalities are as follows:</p>
+      
+              <p><strong>Web UI Component:</strong> The user interface of the application was built using Amazon CloudFront, Amazon S3 (WebUIBucket), Amazon DynamoDB (Settings table), Amazon Cognito (for user authentication), and AWS Lambda (Settings function).</p>
+      
+              <p><strong>Client API:</strong> The client-side API was implemented using Amazon API Gateway, AWS AppSync (for GraphQL API), and AWS Lambda (functions).</p>
+      
+              <p><strong>Storage Management:</strong> The application utilized Amazon S3 (AppdataStorageBucket) for storing application data, and AWS Amplify for seamless integration with the storage service.</p>
+      
+              <p><strong>Cost Component:</strong> To monitor and manage costs, the application employed AWS Lambda (Cost function), Amazon Athena (for querying cost data), Amazon S3 (CURBucket for storing Cost and Usage Reports), and an S3 bucket (AthenaResultsBucket) for storing Athena query results.</p>
+      
+              <p><strong>Data Component:</strong> The data layer consisted of AWS Lambda (Gremlin function), Amazon Neptune (a graph database), AWS Lambda (Search function), and Amazon OpenSearch Service (successor to Amazon Elasticsearch Service) for efficient data storage and querying.</p>
+      
+              <p><strong>Discovery Component:</strong> The application included a container-based discovery service, utilizing Amazon Elastic Container Service (ECS), AWS Fargate (for running containerized workloads), Amazon Elastic Container Registry (ECR), and AWS SDK for integration.</p>
+      
+              <p><strong>Image Deployment:</strong> The container images were stored in an Amazon S3 bucket (DiscoveryBucket) for deployment purposes.</p>
+      
+              <p><strong>Infrastructure as Code:</strong> The application leveraged AWS CodePipeline for automating the build, test, and deployment processes, and AWS CodeBuild for compiling and packaging the application code.</p>
+      
+              <p><strong>Networking:</strong> The application utilized an Amazon VPC (Virtual Private Cloud) and a private subnet to secure network communication.</p>
+      
+              <p>The primary objectives of this project were to create a serverless web application with a GraphQL API for efficient data fetching, implement cost monitoring and reporting mechanisms using AWS services, and integrate a container-based discovery service for advanced functionality. The serverless architecture and the use of managed services provided scalability, reduced operational overhead, and enabled rapid development and deployment cycles.</p>
+            `
+          }
+        ]
+      },
+      {
+        title: 'Machine Learning Pipeline on AWS',
+        category: 'Cloud Solutions',
+        categories: ['DATA'],
+        image: 'assets/images/AWS_3.png',
+        content: [
+          {
+            type: 'text',
+            title: 'Machine Learning Pipeline for Model Training, Inference, and Monitoring',
+            description: `
+              <p>This project involved the implementation of a comprehensive machine learning pipeline leveraging AWS services for model training, inference, and monitoring. The key components and functionalities are as follows:</p>
+      
+              <p><strong>Model Development Pipeline:</strong> The model development pipeline consisted of several stages, including Data Preprocessing, Training, Preprocessing for Validation, Training Validation, and Model Deployment. This pipeline was responsible for processing the training data, executing model training algorithms, validating the trained model, and deploying the validated model for production use.</p>
+      
+              <p><strong>Inference Pipeline:</strong> The inference pipeline was designed to handle real-time inference requests. It included stages for Data Preprocessing, Batch Preprocessing, Inference Batch Scoring, Batch Scoring, and Scoring Result Processing. This pipeline ensured that incoming data was preprocessed, scored against the deployed model, and the results were processed and stored for further analysis or consumption.</p>
+      
+              <p><strong>Inference State Machine:</strong> An AWS State Machine was utilized to manage the end-to-end inference process, orchestrating the various stages of the inference pipeline.</p>
+      
+              <p><strong>Monitoring:</strong> The pipeline incorporated monitoring capabilities to track model performance and detect potential drift or degradation. This included components for Batch Scoring, Drift Monitoring, and Trigger events for retraining or model updates.</p>
+      
+              <p><strong>Infrastructure:</strong> The project leveraged various AWS services, including AWS Lambda for executing serverless functions, AWS SageMaker for model training and deployment, AWS Step Functions for orchestrating the state machines, and AWS S3 for data storage. Other services like AWS IAM (Identity and Access Management) and AWS CloudTrail were likely used for access control and auditing purposes.</p>
+      
+              <p>The primary objective of this project was to establish a robust and scalable machine learning pipeline that automated the entire lifecycle of model training, validation, deployment, inference, and monitoring. By leveraging AWS's managed services and serverless architecture, the pipeline aimed to streamline the development and operationalization of machine learning models, enabling efficient model updates and ensuring reliable model performance over time.</p>
+            `
+          }
+        ]
+      }
+      ,
+
+      {
+        title: 'Data Integration using Snowflake on AWS',
+        category: 'Cloud Solutions',
+        categories: ['DATA'],
+        image: 'assets/images/AWS_4.jpeg',
+        content: [
+          {
+            type: 'text',
+            title: 'Enterprise Data Integration and Analytics Platform for Snowflake',
+            description: `
+              <p>This project involved the implementation of an enterprise data integration and analytics platform leveraging AWS services and the Snowflake cloud data platform. The key components and functionalities are as follows:</p>
+              <p><strong>Data Sources:</strong> The platform supports ingestion of data from various sources, including Amazon Kinesis Data Streams (for real-time data), Amazon S3 (for batch data), and Amazon RDS (for relational databases).</p>
+              <p><strong>Data Processing and Transformation:</strong> AWS Lambda functions were deployed to process and transform data from the sources. AWS Glue was utilized for data cataloging, ETL (Extract, Transform, Load) jobs, and data movement. AWS Glue Connectors were employed for seamless integration with Snowflake and other data sources.</p>
+              <p><strong>Data Lake:</strong> Amazon S3 was used as a data lake to store raw and processed data.</p>
+              <p><strong>Data Integration with Snowflake:</strong> The processed data from the AWS ecosystem was loaded into the Snowflake cloud data platform using Snowflake's COPY command or AWS Glue Connectors. Snowflake served as the central repository for integrated data from various sources.</p>
+              <p><strong>Data Analytics and Visualization:</strong> Snowflake provided powerful analytics capabilities, allowing users to run SQL queries, create reports, and perform advanced analytics on the integrated data. Tools like AWS QuickSight and Tableau were likely integrated for data visualization and business intelligence (BI) purposes.</p>
+              <p><strong>Data Governance and Security:</strong> The platform implemented robust data governance and security measures, utilizing AWS VPC (Virtual Private Cloud), AWS PrivateLink (for secure connectivity), and AWS Identity and Access Management (IAM) for access control and permissions management.</p>
+              <p><strong>Collaboration and Workflow:</strong> The platform facilitated collaboration among team members, including ML Data Engineers, Analytics Engineers, Data Scientists, and Business Analysts. Workflows were likely established to streamline the data integration, transformation, and analysis processes.</p>
+              <p>The primary objective of this project was to establish a scalable and secure data integration and analytics platform that leveraged the power of AWS services and Snowflake's cloud data platform. By integrating data from various sources, the platform aimed to provide a centralized repository for data analysis, enabling data-driven decision-making and facilitating collaboration among cross-functional teams within the organization.</p>
+            `
+          }
+        ]
+      }
+      ,
+      {
+        title: 'Churn Prediction and Retention Analysis',
+        category: 'Cloud Solutions',
+        categories: ['DATA'],
+        image: 'assets/images/AWS_5.png',
+        content: [
+          {
+            type: 'text',
+            title: 'Churn Prediction and  Retention on AWS',
+            description: `
+            <p>In this project,We developed a churn prediction and retention system for a telecom company using AWS cloud services. The goal was to leverage machine learning to predict subscriber churn and implement targeted retention strategies.</p>
+            <p>We collected telecom data, including call data records (CDRs), billing information, and customer care interactions, and stored it in an Amazon Simple Storage Service (Amazon S3) bucket.We then trained a churn prediction model on this labeled dataset using Amazon SageMaker. After testing and tuning the model,We deployed it as a hosted endpoint using SageMaker.</p>
+            <p>For each churn inference event,We utilized Amazon SageMaker Clarify to identify the key features contributing to the model's churn likelihood prediction.We exported the churn model predictions and explainability reports to another Amazon S3 bucket using an AWS Lambda function.</p>
+            <p>We used Amazon QuickSight to visualize the model and explainability data, enabling interactive analysis and identification of churn patterns and trends. This analysis helped inform decisions on which subscribers should receive retention offers. Amazon Athena was employed by Amazon QuickSight to access the data in the S3 bucket.</p>
+            <p>As a telecom analyst,We analyzed insights from the churn prediction dashboard and used Amazon Pinpoint to send out subscriber retention offers. Additionally, telecom applications could incorporate near real-time churn prediction by directly calling the Amazon SageMaker hosting endpoint.</p>
+            <p>This project demonstrated the integration of various AWS services for data ingestion, machine learning model training and deployment, model explainability, data visualization, and customer engagement. It showcased the application of machine learning to predict customer churn and enable targeted retention strategies in the telecom industry.</p>
+          
+            `
+          }
+        ]
+      }
+      ,
+    {
+      image: 'assets/images/reader_0.jpg',
+      title: 'Reader AI',
+      category: 'AI Products',
+      categories: ['AI'],
+      // galleryImages: ['assets/images/Reader_AI_1.png', 'assets/images/Reader_AI_2.png'],
+    },
+    {
+      image: 'assets/images/Kepler_0.jpg',
+      title: 'Kepler AI',
+      category: 'AI Products',
+      categories: ['AI'],
+      // galleryImages: ['assets/images/Kepler_1.png', 'assets/images/Kepler_2.png', 'assets/images/Kepler_3.png'],
+    },
+    {
+      image: 'assets/images/jarvis_0.jpg',
+      title: 'Jarvis AI',
+      category: 'AI Products',
+      categories: ['AI'],
+      galleryImages: ['assets/images/jarvis_1.png'],
+    },
+    {
+      image: 'assets/images/Chinese_0.jpg',
+      title: 'Szechuan Spot',
+      category: 'Web Development',
+      categories: ['WEB'],
+      galleryImages: ['assets/images/Chinese_1.png', 'assets/images/Chinese_2.png', 'assets/images/Chinese_3.png', 'assets/images/Chinese_4.png', 'assets/images/Chinese_5.png', 'assets/images/Chinese_6.png', 'assets/images/Chinese_7.png', 'assets/images/Chinese_8.png'],
+    },
+    {
+      image: 'assets/images/Laundry_0.jpg', // Add a new image for the new project
+      title: 'Chelsea Cleaners',
+      category: 'Web Development',
+      categories: ['WEB'],
+      galleryImages: ['assets/images/Laundry_22.jpeg','assets/images/Laundry_1.jpeg', 'assets/images/Laundry_2.jpeg', 'assets/images/Laundry_3.jpeg', 'assets/images/Laundry_4.jpeg', 'assets/images/Laundry_5.jpeg', 'assets/images/Laundry_6.jpeg', 'assets/images/Laundry_7.jpeg', 'assets/images/Laundry_8.jpeg', 'assets/images/Laundry_9.jpeg', 'assets/images/Laundry_10.jpeg', 'assets/images/Laundry_11.jpeg', 'assets/images/Laundry_12.jpeg', 'assets/images/Laundry_13.jpeg', 'assets/images/Laundry_14.jpeg', 'assets/images/Laundry_15.jpeg', 'assets/images/Laundry_16.jpeg', 'assets/images/Laundry_17.jpeg', 'assets/images/Laundry_18.jpeg', 'assets/images/Laundry_19.jpeg', 'assets/images/Laundry_20.jpeg', 'assets/images/Laundry_21.jpeg'],
+    },
+    {
+      image: 'assets/images/Admin_0.jpg', // Add a new image for the new project
+      title: 'Laundry App Dashboard',
+      category: 'Web Development',
+      categories: ['WEB'],
+      galleryImages: ['assets/images/Admin_1.png', 'assets/images/Admin_2.png', 'assets/images/Admin_3.png', 'assets/images/Admin_4.png', 'assets/images/Admin_5.png', 'assets/images/Admin_6.png', 'assets/images/Admin_7.png'],
+    },
+    {
+      image: 'assets/images/attendence.jpg', // Add a new image for the new project
+      title: 'Attendence Dashboard',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: 'assets/images/business.jpg', // Add a new image for the new project
+      title: 'Business Metric Dashboard',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: 'assets/images/show.jpg', // Add a new image for the new project
+      title: 'Flix Finder',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: 'assets/images/estate.jpg', // Add a new image for the new project
+      title: 'PropertyPilot Listings',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: 'assets/images/wood.png', // Add a new image for the new project
+      title: 'FurFriend Finder',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: 'assets/images/saloon.png', // Add a new image for the new project
+      title: 'Rosie Saloon & Spa',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: 'assets/images/furnish.png', // Add a new image for the new project
+      title: 'PavePlank Interiors',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: 'assets/images/sol.png', // Add a new image for the new project
+      title: 'CorpEdge Solutions',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: 'assets/images/member.png', // Add a new image for the new project
+      title: 'MemberMax Plus',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: 'assets/images/marketing.png', // Add a new image for the new project
+      title: 'Digital Marketing Mesh',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: 'assets/images/pet.png', // Add a new image for the new project
+      title: 'Susane PetPantry',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: 'assets/images/click.png', // Add a new image for the new project
+      title: 'Click & Earn',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: 'assets/images/rui.png', // Add a new image for the new project
+      title: 'Rui Consulting',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: 'assets/images/charity.png', // Add a new image for the new project
+      title: 'GiveGather Foundation',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: 'assets/images/baby.png', // Add a new image for the new project
+      title: 'LittleJoy Emporium',
+      category: 'Web Development',
+      categories: ['WEB'],
+    },
+    {
+      image: 'assets/images/App_0.png',
+      title: 'Laundry App',
+      category: 'Mobile App',
+      categories: ['APP'],
+      // galleryImages: [
+      //   'assets/images/App_02.jpeg',
+      //   'assets/images/App_01.jpeg'
+      // ],
+    },
+    {
+      image: 'assets/images/trademesh.png',
+      title: 'TradeMesh App',
+      category: 'Mobile App',
+      categories: ['APP'],
+      // galleryImages: [
+      //   'assets/images/App_02.jpeg',
+      //   'assets/images/App_01.jpeg'
+      // ],
+    },
+    {
+      image: 'assets/images/clinicare.png',
+      title: 'CliniCare App',
+      category: 'Mobile App',
+      categories: ['APP'],
+      // galleryImages: [
+      //   'assets/images/App_02.jpeg',
+      //   'assets/images/App_01.jpeg'
+      // ],
+    },
+    
+  ];
+
+    const projectCategories = ['.AI', '.WEB', '.DATA', '.APP'];
+
+    function filterProjects(filter) {
+    // Hide all projects
+    $('.single_project').hide();
+
+    // Show projects based on the selected filter
+    if (filter === '.AI') {
+        $('.single_project.AI').show();
+    } else if (filter === '.WEB') {
+        $('.single_project.WEB').show();
+    } else if (filter === '.DATA') {
+        $('.single_project.DATA').show();
+    } else if (filter === '.APP') {
+        $('.single_project.APP').show();
+    } else {
+        // Show all projects if no filter is selected
+        $('.single_project').show();
+    }
+
+    // Reinitialize slick slider with the filtered projects
+    $('.project_slider').slick('unslick');
+    initializeSlickSlider();
+}
+
+$(document).ready(function() {
+    // Initialize slick slider
+    $('.project_slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+    // Add projects to the slider
+    projects.forEach(project => {
+        let projectItem = `
+            <div class="col-lg-4 col-md-6 single_project ${project.categories.join(' ')}">
+                <div class="deneb_img">
+                    <img src="${project.image}" alt="${project.title}">
+                </div>
+                <div class="deneb_info">
+                    <h4>${project.title}</h4>
+                    <p>${project.category}</p>
+                </div>
+            </div>
+        `;
+        $('.project_slider').slick('slickAdd', projectItem);
+    });
+
+    // Filter projects on button click
+    $('.project_btn').on('click', function() {
+        $('.project_btn').removeClass('active_btn');
+        $(this).addClass('active_btn');
+        let filter = $(this).data('filter');
+        filterProjects(filter);
+    });
+
+    // Set initial filter to .AI
+    filterProjects('.AI');
+});
+</script>
+
+</body></html>
